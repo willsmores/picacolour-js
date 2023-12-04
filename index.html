@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Readex+Pro:wght@300;500&display=swap" rel="stylesheet">
+    <title>Steve Willsmore | JavaScript Project 2</title>
+</head>
+<body>
+    <main class="wrapper">
+      <header>
+        <div class="headerFlex">
+          <h1>PICaCOLOUR</h1>
+          <h2>An image search with a colourful twist</h2>
+        </div>
+  
+        <form action="#">
+            
+          <div class="searchBar">
+            <label for="searchInput">I want to see images of</label>
+            <input type="text" placeholder="cities" id="searchInput" required>
+          </div>
+
+          <div class="colourSelector">
+            <label for="colourSelection">that have a lot of</label>
+            <select name="colourSelection" class="colourSelection" id="colourSelection" autocomplete="off" required>
+              <option value="" selected disabled hidden>choose colour</option>
+
+              <!-- colour options go in here -->
+
+            </select>
+            <input type="submit" value="Search">
+          </div>
+
+        </form>
+      </header>
+  
+      <section class="results">
+
+        <!-- image search results go in here -->
+
+      </section>
+
+      <footer>
+        <p>Created by Steve Willsmore at <a href="https://junocollege.com/" target="_blank">Juno College of Technology</a><br>and powered by <a href="https://www.pexels.com/api/" target="_blank">Pexels API</a></p>
+      </footer>
+
+    </main>
+
+    <div class="loading-overlay">
+      <div class="spinner-container">
+        <span class="spinner"></span>
+      </div>
+    </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="./scripts/script.js"></script>
+  
+  </body>
+</html>

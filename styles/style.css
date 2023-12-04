@@ -1,0 +1,298 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+/* stripping the default padding/margin from elements */
+
+p,
+h1,
+h2,
+h3,
+h4,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* wrapper styles */
+
+.wrapper {
+    max-width: 1200px;
+    width: 82.5%;
+    margin: 0 auto;
+}
+
+
+/* general styling */
+
+body {
+	background: linear-gradient(0deg, #40e0d0, #ff8c00, #ff0080);
+    background-attachment: fixed;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1 {
+    font-family: 'Lilita One', cursive;
+    font-weight: 700;
+    font-size: 7rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h2,
+p,
+label,
+input,
+button,
+select {
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 300;
+}
+
+p,
+label,
+input,
+button,
+select {
+    font-size: 1.8rem;
+}
+
+header {
+    padding-top: 50px;
+}
+
+input {
+    background: white;
+    border: 2px solid black;
+    height: 30px;
+    margin: 0 10px;
+    transition: 0.2s ease-in-out;
+}
+
+input[type="text"] {
+    width: 200px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background: black;
+    border: 2px solid black;
+    color: white;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    background: white;
+    border: 2px solid black;
+    color: black;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+    display: block;
+    object-fit: cover;
+    border: 6px solid black;
+    margin-bottom: 10px;
+}
+
+select {
+    background: white;
+    border-radius: 0;
+    border: 2px solid black;
+    height: 30px;
+}
+
+.results a {
+    color: black;
+}
+
+.headerFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.results {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+.pexelResult {
+    margin: 15px 10px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.imageContainer {
+	transition: all .3s;
+}
+
+.imageContainer:hover,
+.imageContainer:focus {
+    transform: scale(1.05);
+}
+
+form {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.colourSelection {
+    margin-left: 10px;
+}
+
+select,
+select option {
+  color: black;
+}
+
+select:invalid,
+select option[value=""] {
+  color: #808080;
+}
+
+.colourSelector,
+.searchBar {
+    padding-top: 20px;
+}
+
+footer {
+    margin: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+
+footer a {
+    color: black;
+}
+
+.errorMsg {
+    padding: 50px 0;
+}
+
+.loading-overlay {	
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height:100%;
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+.spinner-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px #ddd solid;
+    border-top: 4px #2e93e6 solid;
+    border-radius: 50%;
+    animation: sp-anime 0.8s infinite linear;
+}
+
+@keyframes sp-anime {
+    100% { 
+        transform: rotate(360deg); 
+    }
+}
+
+
+/* media queries */
+
+@media (max-width: 988px) {
+  
+    .wrapper {
+        width: 87.5%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 6rem;
+    }
+    
+    h2 {
+        font-size: 2.0rem;
+    }
+    
+    p,
+    label,
+    input,
+    button,
+    select {
+        font-size: 1.4rem;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+    }
+
+    input[type="text"] {
+        width: 120px;
+    }
+}
+
+
+@media (max-width: 423px) {
+
+    .wrapper {
+        width: 92.5%;
+    }
+
+    h1 {
+        font-size: 5.8rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+}
